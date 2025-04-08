@@ -4,3 +4,5 @@ members = [
     "control-flow",
     "guessing-game"
 ]
+
+resolver = "3"
