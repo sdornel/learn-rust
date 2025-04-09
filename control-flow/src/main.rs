@@ -1,11 +1,72 @@
 fn main() {
-    // Convert temperatures between Fahrenheit and Celsius.
-    // Generate the nth Fibonacci number.
-    // Print the lyrics to the Christmas carol “The Twelve Days of Christmas,” taking advantage of the repetition in the song.
+    // temperature_conversion(29, 'C');
+    // println!("{}", generate_nth_fibonacci_nnumber(10));
+    twelve_days_of_christmas();
 }
 
-fn temperature_conversion (temp) {
+// fn temperature_conversion(temp: i32, type_of_temp: char) {
+//     if type_of_temp == 'F' {
+//         let celsius = (temp - 32) * 5 / 9;
+//         println!("The temperature in Celsius is {celsius}");
+//     } else if type_of_temp == 'C' {
+//         let fahrenheit = (temp * 9 / 5) + 32;
+//         println!("The temperature in Fahrenheit is {fahrenheit}");
+//     } else {
+//         println!("Invalid type of temperature. Use F or C");
+//     }
+// }
 
+// fn generate_nth_fibonacci_nnumber(n: i32) -> i32 {
+//     if n <= 1 {
+//         return n;
+//     }
+//     generate_nth_fibonacci_nnumber(n - 1) + generate_nth_fibonacci_nnumber(n - 2)
+// }
+
+fn twelve_days_of_christmas() {
+    let days = [
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "sixth",
+        "seventh",
+        "eighth",
+        "ninth",
+        "tenth",
+        "eleventh",
+        "twelfth",
+    ];
+
+    let gifts = [
+        "a Partridge in a Pear Tree",
+        "two Turtle Doves",
+        "three French Hens",
+        "four Calling Birds",
+        "five Gold Rings",
+        "six Geese a Laying",
+        "seven Swans a Swimming",
+        "eight Maids a Milking",
+        "nine Ladies Dancing",
+        "ten Lords a Leaping",
+        "eleven Pipers Piping",
+        "twelve Drummers Drumming",
+    ];
+
+    for i in 0..12 {
+        println!("On the {} day of Christmas, my true love sent to me:", days[i]);
+        for j in (0..=i).rev() {
+            if i == 0 && j == 0 {
+                println!("{}", gifts[j]);
+            } else if j == 0 {
+                println!("and {}", gifts[j]);
+            }
+            else {
+                println!("{}", gifts[j]);
+            }
+        }
+    }
 }
 
 // fn main() {
