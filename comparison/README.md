@@ -8,14 +8,17 @@ node src/main.js
 
 Below are averages based on five runs of the respective code
 
-FIRST TEST:
+FIRST TEST (scraping only):
 rust average - 819.0625248ms
 python average - 0.4764327526s
 node average - 0.7216s
 
-SECOND TEST:
+SECOND TEST (scrapes and gets word count):
 rust average - 2.1172037914s
 python average - 13.908s
 node average - 4.4744s
 
-4.472 + 4.441 + 4.411 + 4.526 + 4.522
+THIRD TEST (print longest 3 summaries per page):
+rust average - 2.1418013914s
+python average - 13.504s
+node average - 4.427s
