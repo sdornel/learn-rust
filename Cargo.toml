@@ -4,6 +4,7 @@ members = [
     "control-flow",
     "guessing-game",
     "ownership",
+    "comparison",
 ]
 
 resolver = "3"

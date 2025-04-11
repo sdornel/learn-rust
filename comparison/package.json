@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "got": "^14.4.7"
+  },
+  "name": "comparison",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "python3 -m venv venv source venv/bin/activate pip install aiohttp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
