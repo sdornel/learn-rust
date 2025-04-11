@@ -5,6 +5,7 @@ members = [
     "guessing-game",
     "ownership",
     "comparison",
+    "references_and_borrowing",
 ]
 
 resolver = "3"
