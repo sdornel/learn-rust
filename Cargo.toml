@@ -6,6 +6,7 @@ members = [
     "ownership",
     "comparison",
     "references_and_borrowing",
+    "the_slice_type",
 ]
 
 resolver = "3"
