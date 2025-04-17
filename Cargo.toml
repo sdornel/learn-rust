@@ -8,6 +8,7 @@ members = [
     "references_and_borrowing",
     "the_slice_type",
     "structs_part_1",
+    "structs_part_2",
 ]
 
 resolver = "3"
