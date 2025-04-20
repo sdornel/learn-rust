@@ -1,14 +1,16 @@
 [workspace]
 members = [
-    "functions",
-    "control-flow",
-    "guessing-game",
-    "ownership",
+    "3.4-functions",
+    "3.5-control-flow",
+    "2-guessing-game",
+    "4.1-ownership",
     "comparison",
-    "references_and_borrowing",
-    "the_slice_type",
-    "structs_part_1",
-    "structs_part_2", "method_syntax",
+    "4.2-references_and_borrowing",
+    "4.3-the_slice_type",
+    "5.1-structs_part_1",
+    "5.2-structs_part_2",
+    "5.3-method_syntax",
+    "6.1-defining-an-enum",
 ]
 
 resolver = "3"
