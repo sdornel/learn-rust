@@ -11,7 +11,7 @@ members = [
     "5.2-structs_part_2",
     "5.3-method_syntax",
     "6.1-defining-an-enum",
-    "6.2-match-intro",
+    "6.2-match-intro", "last-modified-time",
 ]
 
 resolver = "3"
