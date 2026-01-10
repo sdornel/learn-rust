@@ -23,11 +23,18 @@ fn main() {
         }
         
         if all_files_old {
-            println!("No new files for more than 5 minutes!");
+            if !alerted {
+                alerted = true;
+                println!("No new files for more than 5 minutes!");
+            }
         } else {
-            println!("Process continuing");
+            if alerted {
+                println!("Activity resumed"); // might need to be removed to avoid "spam"
+                alerted = false;
+            } else {
+                println!("Process continuing");
+            }
         }
         sleep(Duration::from_secs(60));
     }
-
 }
