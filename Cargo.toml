@@ -12,6 +12,7 @@ members = [
     "5.3-method_syntax",
     "6.1-defining-an-enum",
     "6.2-match-intro", "last-modified-time",
+    "random-number",
 ]
 
 resolver = "3"
