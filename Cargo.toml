@@ -14,6 +14,7 @@ members = [
     "6.2-match-intro", "last-modified-time",
     "random-number",
     "file-age-analyzer",
+    "weather-cli",
 ]
 
 resolver = "3"
