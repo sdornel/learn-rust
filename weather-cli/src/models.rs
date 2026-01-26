@@ -15,7 +15,12 @@ pub struct Location {
 
 #[derive(Deserialize, Debug)]
 pub struct CoordinatesResponse {
+    #[serde(default)]
     pub results: Vec<Coordinates>,
+    #[serde(default)]
+    pub error: Option<bool>,
+    #[serde(default)]
+    pub reason: Option<String>,
 }
 
 #[derive(Deserialize, Debug)]
@@ -26,7 +31,6 @@ pub struct Coordinates {
 
 #[derive(Deserialize, Debug)]
 pub struct WeatherResponse {
-    pub timezone: String,
     pub current_weather_units: CurrentWeatherUnits,
     pub current_weather: CurrentWeather,
 }
@@ -40,9 +44,6 @@ pub struct CurrentWeatherUnits {
 pub struct CurrentWeather {
     pub time: String,
     pub temperature: f64,
-    pub windspeed: f64,
-    pub winddirection: f64,
-    pub is_day: u8,
 }
 
 #[derive(Deserialize, Debug)]
@@ -50,7 +51,6 @@ pub struct WeatherData {
     pub time: String,
     pub temperature: f64,
     pub unit: String,
-    pub timezone: String,
     // pub windspeed: f64,
     // pub winddirection: f64,
     // pub is_day: u8,
